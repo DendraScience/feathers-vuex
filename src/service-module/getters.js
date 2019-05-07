@@ -6,7 +6,7 @@ import omit from 'lodash.omit'
 const { _ } = commons
 const { filterQuery, sorter, select } = dbCommons
 const FILTERS = [ '$sort', '$limit', '$skip', '$select' ]
-const OPERATORS = [ '$in', '$nin', '$lt', '$lte', '$gt', '$gte', '$ne', '$or' ]
+const OPERATORS = [ '$in', '$nin', '$lt', '$lte', '$gt', '$gte', '$ne', '$or', '$and' ]
 const additionalOperators = [ '$elemMatch' ]
 const defaultOps = FILTERS.concat(OPERATORS).concat(additionalOperators)
 

@@ -7,6 +7,7 @@ export default function makeDefaultState (servicePath, options) {
     diffOnPatch,
     skipRequestIfExists,
     preferUpdate,
+    keepCopiesInStore,
     replaceItems,
     paramsForServer,
     whitelist
@@ -28,6 +29,7 @@ export default function makeDefaultState (servicePath, options) {
     diffOnPatch,
     skipRequestIfExists,
     preferUpdate,
+    keepCopiesInStore,
     replaceItems,
     pagination: {},
     paramsForServer,

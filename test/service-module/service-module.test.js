@@ -874,6 +874,7 @@ describe('Service Module', () => {
         isPatchPending: false,
         isRemovePending: false,
         keyedById: {},
+        keepCopiesInStore: false,
         modelName: 'Todo',
         addOnUpsert: false,
         diffOnPatch: false,

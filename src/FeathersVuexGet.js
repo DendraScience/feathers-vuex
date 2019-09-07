@@ -40,7 +40,6 @@ export default {
     }
   },
   data: () => ({
-    isFindPending: false,
     isGetPending: false
   }),
   computed: {
@@ -79,7 +78,7 @@ export default {
 
         if (this.id) {
           return this.$store.dispatch(`${this.service}/get`, getArgs.length === 1 ? this.id : getArgs)
-            .then(() => {
+            .finally(() => {
               this.isGetPending = false
             })
         }

@@ -73,7 +73,7 @@ export default {
             params.qid = params.qid || this.qid
           }
           return this.$store.dispatch(`${this.service}/find`, params)
-            .then(() => {
+            .finally(() => {
               this.isFindPending = false
             })
         }
